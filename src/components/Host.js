@@ -1,14 +1,20 @@
-import React, { useState } from 'react'
-import './Host.css'
+import('./Host.css')
+
+
 
 const Host = (props) => {
-    let superHost=true;
-    superHost = props.superHost;
+    
+    const superHostStyle = {
+        fontSize: '1rem',
+        color: '#fff'
+    }
+    
+    
     return (
-        <div>{
-            superHost===true && 
-            <p className="host">super host</p>
-            }
+        <div>
+       
+            <p className="host" style={superHostStyle} >super host</p>
+         
         </div>
     )
 }

@@ -1,5 +1,21 @@
 .card img{
     width: 100%;
     border-radius: 12px;
-    margin: 2rem auto;
+    margin: 1rem auto;
+  }
+
+  .card--info{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .card--info p{
+      font-size: 1.2rem;
+      color: rgb(134, 134, 134);
+      
+    }
+    
+
+  .card--info span{
+      padding: .5rem;
   }
