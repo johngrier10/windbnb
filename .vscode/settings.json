@@ -1,0 +1,15 @@
+{
+    "extensions.supportVirtualWorkspaces": {
+
+        "pub.name": false
+    },
+    "folders": [],
+    "settings": {
+        "emmet.includeLanguages": {
+           "javascript": "javascriptreact"
+        }
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    }
+}
