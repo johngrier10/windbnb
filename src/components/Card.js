@@ -1,42 +1,44 @@
 import React from 'react'
 import './Card.css';
 import Host from './Host'
+import Description from './Description';
 import StayData from '../data/stays.json'
+import Rating from './Rating';
 
-const Card = () => {
+const Card = (props) => {
 
-  let stay = StayData[2];
   
 
 
+
     return (
-        <div className ="card">
-          <img alt="loft space" src={stay.photo}/>
-
-          <div className="card--info">
-              {
-                stay.superHost===true &&
-                <Host/>
-                }
-
-                <p>
-                 {stay.type} 
 
 
-               {
-               stay.beds!==null &&
-               <span>.</span>
-               }
-               {
-               stay.beds!==null &&
-               stay.beds + " beds"
-               }
-                </p>
-          </div>
-        
-        
+
+
+        <div className ="cardList">
+          {StayData.map((detail, index)=>{
+            return <div className="card">
+              <img src={detail.photo} alt={detail.title} />
+                <div className="card--info">
+                    {
+                      detail.superHost===true &&
+                      <Host/>
+                      }
+                    <Description stay={detail} style={{color:'blue'}}/>
+                    <Rating stay={detail}/>   
+                  </div>
+
+            </div>       
+          
+          
+          
+          
+          })}
         
         </div>
+        
+        
          
 
     )
