@@ -16,7 +16,7 @@ body {
 }
 
 .wrap{
-  max-width: 100%;
+  max-width: 36rem;
   margin: 0 auto;
   background: rgb(56, 56, 56);
   padding: 1rem;
@@ -27,17 +27,6 @@ code {
     monospace;
 }
 
-.App-header{
-  position: fixed;
-}
 
-.App-header>a{
-  color: #eb5757;
-  display: flex;
-  flex-direction: row;
-  text-decoration: none;
-  align-items: center;
-  gap: 1rem;
-  font-size: 4rem;
-  margin: 0;
-}
+
+

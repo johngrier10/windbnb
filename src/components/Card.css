@@ -11,9 +11,12 @@
     box-sizing: border-box;
   }
 
+.cardList{
+  padding-top: 3rem;
+}
   .card{
     max-width: 36rem;
-    margin: 0 auto;
+    margin: 1rem auto;
   }
 
   .card--info{
