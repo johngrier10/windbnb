@@ -1,9 +1,4 @@
-.card img{
-    width: 100%;
-    border-radius: 12px;
-    margin: 1rem auto;
-    
-  }
+
 
 *{
     padding: 0;
@@ -11,13 +6,27 @@
     box-sizing: border-box;
   }
 
-.cardList{
-  padding-top: 3rem;
-}
-  .card{
-    max-width: 36rem;
-    margin: 1rem auto;
+  .image-wrap {
+    width: 100%;
+    height: 24rem;
+    overflow: hidden;
+    
+
   }
+  
+  .image-wrap img {
+    display: block;
+    height: 23.9rem;
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+.cardList{
+  padding-top: 4rem;
+  display: grid;
+  gap: 1rem;
+}
+
 
   .card--info{
       display: flex;
@@ -35,4 +44,9 @@
       padding: 0 .09rem;
   }
 
+  @media screen and (max-width: 960px) {
+    .cardList{
+      display: grid;
+    }
+  }
   
