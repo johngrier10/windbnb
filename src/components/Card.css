@@ -21,32 +21,50 @@
     border-radius: 12px;
     object-fit: cover;
   }
+
 .cardList{
   padding-top: 4rem;
   display: grid;
   gap: 1rem;
 }
 
+.card{
+  background: rgb(85, 85, 85);
+  padding: 1rem;
+  border-radius: 12px;
+  max-width: 36rem;
+}
 
-  .card--info{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+
+
+
+.card--info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+.card--info p{
+    font-size: 1.2rem;
+    color: rgb(134, 134, 134);
+    
   }
-  .card--info p{
-      font-size: 1.2rem;
-      color: rgb(134, 134, 134);
-      
-    }
     
 
-  .card--info span{
-      padding: 0 .09rem;
-  }
+.card--info span{
+    padding: 0 .09rem;
+}
 
-  @media screen and (max-width: 960px) {
-    .cardList{
-      display: grid;
-    }
+@media screen and (min-width: 760px) {
+  .cardList{
+  
+    grid-template-columns: 1fr 1fr;
   }
+}    
+@media screen and (min-width: 1080px) {
+  .cardList{
+  
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}    
   

@@ -4,7 +4,7 @@ function Rating(props) {
     return (
         <div className='rating'>
 
-            <p style={{color:'#eb5757'}}>
+            <p style={{color:'rgb(255 162 162)'}}>
                 
                 <span class="material-icons md-16" 
                 style={{fontSize:11}} >star</span>

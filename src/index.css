@@ -27,6 +27,17 @@ code {
     monospace;
 }
 
+@media screen and (min-width: 760px){
+  .wrap{
+    max-width: 76rem;
+  }
+}
+@media screen and (min-width: 1080px){
+  .wrap{
+    max-width: 108rem;
+  }
+}
+
 
 
 

@@ -30,7 +30,7 @@ const Card = (props) => {
                     detail.superHost===true &&
                     <Host/>
                     }
-                  <Description stay={detail} style={{color:'blue'}}/>
+                  <Description stay={detail}/>
                   <Rating stay={detail}/>   
                 </div>
               
