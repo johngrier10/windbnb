@@ -23,13 +23,13 @@
   }
 
 .cardList{
-  padding-top: 4rem;
+  padding-top: 12rem;
   display: grid;
   gap: 1rem;
 }
 
 .card{
-  background: rgb(85, 85, 85);
+  background: rgb(56, 56, 56);
   padding: 1rem;
   border-radius: 12px;
   max-width: 36rem;

@@ -1,5 +1,15 @@
-.App-header>a{
+*{
+    box-sizing: border-box;
+}
+
+header{
+    margin: 0 auto;
     position: fixed;
+    background:  rgb(29, 29, 29);
+}
+
+.App-header>a{
+  
     color: #eb5757;
     display: flex;
     flex-direction: row;
@@ -9,4 +19,29 @@
     font-size: 4rem;
     margin: 0;
 }
+
+.App-header{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.App-header input{
+    height: 4.5rem;
+    border-radius: 16px;
+    background-color: rgb(49, 49, 49);
+    outline: none;
+    border: none;
+    color: thistle;
+    font-size: 1.6rem;
+    max-width: 149px;
+    padding: 0 1rem;
+    margin: 1rem 0 1.5rem 0;
+
+}
+
+
 
