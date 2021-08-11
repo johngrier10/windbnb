@@ -5,6 +5,9 @@
 header{
     margin: 0 auto;
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     background:  rgb(29, 29, 29);
 }
 
