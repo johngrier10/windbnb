@@ -30,20 +30,39 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    gap: 1rem;
 }
 
 .App-header input{
     height: 4.5rem;
-    border-radius: 16px;
+    width: 98%;
+    border-radius: 12px;
     background-color: rgb(49, 49, 49);
     outline: none;
     border: none;
     color: thistle;
     font-size: 1.6rem;
-    max-width: 149px;
-    padding: 0 1rem;
-    margin: 1rem 0 1.5rem 0;
+    margin: 0 auto;   
+    padding: 0 4rem; 
+}
 
+@media screen and (min-width: 760px){
+    header input{
+     width: 76rem;
+    }
+  }
+  @media screen and (min-width: 1080px){
+    header input{
+     width: 50%;
+    }
+  }
+
+.filter{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    padding-bottom: 1rem;
 }
 
 
