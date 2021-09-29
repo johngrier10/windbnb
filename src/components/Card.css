@@ -15,11 +15,17 @@
   }
   
   .image-wrap img {
+
     display: block;
     height: 23.9rem;
     width: 100%;
     border-radius: 12px;
     object-fit: cover;
+    transition: transform .5s ease;
+  }
+
+  .image-wrap:hover img{
+    transform: scale(1.02);
   }
 
 .cardList{

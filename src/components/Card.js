@@ -6,22 +6,15 @@ import StayData from '../data/stays.json'
 import Rating from './Rating';
 
 const Card = (props) => {
-
   
-
-
-
     return (
-
-
-
 
         <div className ="cardList">
           
           {StayData.map((detail, index)=>{
             return <div className="card">
               
-              <div className="image-wrap">
+              <div className="image-wrap" key={index}>
                 <img src={detail.photo} alt={detail.title} />
               </div>
               
@@ -32,15 +25,10 @@ const Card = (props) => {
                     }
                   <Description stay={detail}/>
                   <Rating stay={detail}/>   
-                </div>
-              
+                </div>              
             </div>       
           })}
-        </div>
-        
-        
-         
-
+        </div>          
     )
 }
 
